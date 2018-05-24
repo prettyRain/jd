@@ -1,0 +1,259 @@
+
+.body_box {
+    min-width:300px;
+    max-width:640px;
+    margin:0 auto;
+    position:relative;
+}
+
+/*头部*/
+.qd_header {
+    position:fixed;
+    top:0;
+    left:0;
+    height:40px;
+    width:100%;
+    z-index:1000;
+}
+.qd_header_box {
+    position:relative;
+    min-width:300px;
+    max-width:640px;
+    height:40px;
+    background-color:rgba(201,21,35,0.85);
+    margin:0 auto;
+}
+.qd_header_box .qd_header_lf {
+    position:absolute;
+    top:8px;
+    left:5px;
+    height:21px;
+    width:60px;
+    background-position:0 -108px;
+
+}
+.qd_header_box .qd_header_ct {
+    padding:0 50px 0 70px;
+    height:40px;
+}
+.qd_header_box .qd_header_ct .qd_header_ct_icon {
+    background-position:-60px -108px;
+    width:19px;
+    height:19px;
+    position:absolute;
+    top:9px;
+    left:78px;
+
+}
+.qd_header_box .qd_header_ct input {
+    height:30px;
+    line-height:30px;
+    width:100%;
+    margin:5px 0;
+    padding-left:30px;
+    border-radius:15px;
+}
+.qd_header_box .qd_header_rg {
+    position:absolute;
+    right:10px;
+    top:0;
+    line-height:40px;
+    color:#fff;
+}
+
+/*轮播图*/
+.qd_banner {
+    position:relative;
+    width:100%;
+}
+.qd_banner .slider {
+    width:100%;
+    overflow:hidden;
+}
+.qd_banner .slider ul{
+    width:800%;
+    position:relative;
+}
+.qd_banner .slider ul li {
+    width:12.5%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.qd_banner .slider ul li img {
+    width:100%;
+}
+.qd_banner .banner_icons li {
+    float:left;
+    width:9px;
+    height:9px;
+    margin:0 3px;
+    border-radius:50%;
+    background-color:#fff;
+    cursor:pointer;
+    opacity:1;
+}
+.qd_banner .banner_icons {
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    margin-left:-60px;
+}
+/*导航nav*/
+.nav {
+    padding:10px 10px 0 10px;
+    box-shadow:0 0 1px 1px #ccc;
+}
+.nav li {
+    float:left;
+    width:25%;
+}
+.nav li a {
+    width:100%;
+    text-align:center;
+}
+.nav li a img {
+    width:40px;
+    height:40px;
+    margin:0 auto;
+    display:block;
+}
+.nav .nav_name {
+    font-size:12px;
+    line-height:28px;
+    color:#666;
+}
+
+/*商品区域*/
+.innerdiv {
+    padding:8px 5px;
+    background-color: rgba(204, 204, 204, 0.27);
+}
+.innerdiv > div {
+    background-color:#fff;
+    box-shadow:0 0 1px 1px #ccc;
+}
+.innerdiv > div + div {
+    margin-top:8px;
+}
+.innerdiv > .rushKill > .rushKill_header,
+.innerdiv > .qzg > .qzg_header,
+.innerdiv > .rmhd > .rmhd_header {
+    height:32px;
+    width:100%;
+    line-height:32px;
+    position:relative;
+}
+.innerdiv > .qzg > .qzg_header h4,
+.innerdiv > .rmhd > .rmhd_header h4 {
+    font-weight:inherit;
+    padding-left:15px;
+}
+.innerdiv > .qzg > .qzg_header::before,
+.innerdiv > .rmhd > .rmhd_header::before {
+    content:'';
+    position:absolute;
+    top:9px;
+    left:7px;
+    display:block;
+    width:3px;
+    height:14px;
+    background-color:#d8505c;
+}
+/*秒杀*/
+.innerdiv .rushKill_header ul li {
+    float:left;
+}
+.rushKill_header_icon {
+    background:url(../images/seckill-icon.png) no-repeat;
+    background-size:16px 20px;
+    height:20px;
+    width:16px;
+    margin-top:6px;
+    margin-left:5px;
+}
+.rushKill_header_content {
+    padding-left:7px;
+    color:#d8505c;
+    font-size:14px;
+}
+.rushKill_header_djs {
+    margin-left:8px;
+    padding-top:10px;
+    line-height:14px;
+}
+.rushKill_header_djs_num {
+    display:inline-block;
+    width:14px;
+    height:14px;
+    background-color:black;
+    color:#fff;
+    text-align:center;
+}
+.innerdiv .rushKill_header ul li.rushKill_header_gd {
+    float:right;
+    padding-right:5px;
+}
+.rushKill_content ul {
+    padding:8px 0;
+}
+.rushKill_content ul li {
+    float:left;
+    width:33.333%;
+}
+.rushKill_content ul li a {
+    display:block;
+    width:100%;
+}
+.rushKill_content ul li a img {
+    width:64%;
+    margin:0 auto;
+    display:block;
+}
+.rushKill_content ul li a .box_img{
+    border-right:1px solid #ccc;
+}
+.rushKill_content ul li:last-child a .box_img{
+    border-right:0;
+}
+.rushKill_content ul li a p {
+    font-size:12px;
+}
+.rushKill_content ul li a p.new_price {
+    text-align:center;
+    color:#d8505c;
+}
+.rushKill_content ul li a p.old_price {
+    text-align:center;
+    color:#ccc;
+    text-decoration:line-through;
+}
+/*超值购  热门活动*/
+.innerdiv .qzg_content,
+.innerdiv .rmhd_content {
+    border-top:1px solid #ccc;
+}
+
+a.border_lf {
+    border-left:1px solid #ccc;
+}
+a.border_rg {
+    border-right:1px solid #ccc;
+}
+a.border_bt {
+    border-bottom:1px solid #ccc;
+}
+.innerdiv .qzg_content a{
+    width:50%;
+    float:left;
+}
+.innerdiv .qzg_content a img {
+    width:100%;
+}
+.innerdiv .rmhd_content a{
+    width:50%;
+    float:right;
+}
+.innerdiv .rmhd_content a img {
+    width:100%;
+}

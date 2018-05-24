@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="39ce71a8-a661-469c-90ef-3d4e11053002" name="localhost" url="http://192.168.155.125:8081">
+        <fileTransfer port="0" mountedRoot="D:\BaiduNetdiskDownload\lianxi就业\web" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
