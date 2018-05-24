@@ -32,3 +32,25 @@ input,textarea {
     display:table;
     clear:both;
 }
+
+
+/*底部*/
+.foolterbar {
+    position:fixed;
+    bottom:-1px;
+    left:0;
+    height:44px;
+    background:url(../images/header-bg.png) repeat-x 0 0;
+    background-size:1px 43px;
+    width:100%;
+    border-top:1px solid #ccc;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.foolterbar a{
+    flex:1;
+    display:inline-block;
+    line-height:43px;
+    text-align:center;
+}
